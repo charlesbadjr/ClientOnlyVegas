@@ -7,18 +7,7 @@ import { handleLogin } from '../reducers/user';
 class Login extends Component {
   state = { email: '', password: '' };
 
-  componentDidMount = () => {
-  // get IP Address save as variable
-    getIpAddress();
-
-  }
-
-  getIpAddress = () => {
-  // call rub code passing param (IP Address in)
-
-  //Return Json
-
-  }
+  
 
 
   handleChange = (event) => {
@@ -36,7 +25,7 @@ class Login extends Component {
     const { email, password, ipAddress } = this.state;
     return (
       <Segment basic>
-        <a> Your IP Adrress Is: {ipAddress} </a> 
+        <a> Your IP Adrress Is:  </a> 
         <Header as="h1" textAlign="center">Login</Header>
         <Form onSubmit={this.handleSubmit}>
           <Form.Field>
